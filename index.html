@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hubs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <h1>Physical Cafe</h1>
+    <div class="content">
+        <form action="" id="add-cafe-form">
+            <input type="text" name="name" placeholder="Cafe name">
+            <input type="text" name="city" placeholder="Cafe city">
+            <button> Add Cafe</button>
+        </form>
+        <ul id="cafe-list"></ul>
+    </div>
+
+
+    
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDNmgZztDSqnI0qwPC9sAcwXtMwmBns-CQ",
+            authDomain: "cafe-firestore-class.firebaseapp.com",
+            databaseURL: "https://cafe-firestore-class.firebaseio.com",
+            projectId: "cafe-firestore-class",
+            storageBucket: "cafe-firestore-class.appspot.com",
+            messagingSenderId: "683785653087",
+            appId: "1:683785653087:web:f4ace2a20e3ee87f5284ea",
+            measurementId: "G-WX9WH0HN0W"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics(); 
+
+        // creating a connection variable to link your code to the firestore database 
+        const db = firebase.firestore();
+        // db.settings({ timestampsInSnapshots: true});
+    </script>
+    <script src="app.js"></script>
+</body>
+</html> 
