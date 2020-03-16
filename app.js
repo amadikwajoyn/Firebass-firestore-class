@@ -43,7 +43,7 @@ function renderCafe(doc){
         // db.collection('cafe').doc(data-id).update({
 //     name: 'Joy Amadikwa'
 // })
-    })
+    // })
 
     //deleting data
     cross.addEventListener('click', (e) => {
