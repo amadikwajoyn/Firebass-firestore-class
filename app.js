@@ -9,7 +9,7 @@ function renderCafe(doc){
     let city =  document.createElement('span');
 
     // creating edit Button 
-    let edit = document.createElement('div.edit');
+    // let edit = document.createElement('div.edit');
     // creating the delete div 
     let cross = document.createElement('div');
 
@@ -20,23 +20,23 @@ function renderCafe(doc){
 
     name.textContent = doc.data().name;
     city.textContent = doc.data().city;
-    edit.textContent = 'Edit' //adding the editing text
+    // edit.textContent = 'Edit' //adding the editing text
     cross.textContent = 'x' //adding the delete 'x' symbol
 
     // aooending the content to Li 
     li.appendChild(name);
     li.appendChild(city);
-    li.appendChild(edit);
+    // li.appendChild(edit);
     li.appendChild(cross);
    
     // appending the Li to the cafeList 
     cafeList.appendChild(li);
 
     //editing data
-    edit.addEventListener('click', (e) => {
-        e.document.createElement('input');
-        let id2 = e.target.parentElement.getAttribute('data-id');
-        db.collection('cafe').doc(id2).update(); 
+    // edit.addEventListener('click', (e) => {
+    //     e.document.createElement('input');
+    //     let id2 = e.target.parentElement.getAttribute('data-id');
+    //     db.collection('cafe').doc(id2).update(); 
 
 
 
